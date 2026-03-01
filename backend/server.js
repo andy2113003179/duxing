@@ -41,9 +41,14 @@ const startServer = async () => {
     await testConnection();
 
     // 同步数据库（开发环境）
+    // 生产环境不使用 alter，避免表结构冲突
     if (serverConfig.env === 'development') {
       await syncDatabase({ alter: true });
-      logger.info('数据库表结构已同步');
+      logger.info('数据库表结构已同步（开发模式）');
+    } else {
+      // 生产环境只验证表存在，不修改结构
+      await syncDatabase({ alter: false });
+      logger.info('数据库连接已验证（生产模式）');
     }
 
     // 启动服务器

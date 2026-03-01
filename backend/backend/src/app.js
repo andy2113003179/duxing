@@ -26,6 +26,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // 静态文件服务（上传的文件）
 app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
+app.use('/api/uploads', express.static(path.join(__dirname, '../uploads')));
 
 // 请求日志
 app.use((req, res, next) => {
