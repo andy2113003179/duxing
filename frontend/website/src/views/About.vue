@@ -15,15 +15,14 @@
             <div class="intro-content">
               <h2>关于我们</h2>
               <p v-if="companyStore.info">
-                {{ companyStore.info.introduction || companyStore.info.description }}
+                {{ companyStore.info.description || companyStore.info.description }}
               </p>
               <p v-else>
-                都兴工贸有限公司成立于2010年，是一家专业从事覆膜纸研发、生产、销售的现代化企业。
-                公司位于山东省临沂市兰山区半程镇工业园，拥有先进的生产设备和完善的质量管理体系，致力于为客户提供高品质的覆膜纸产品。
+                临沂市都兴工贸有限公司总公司成立于2005年9月,位于国际知名的现代商贸物流城、历史文化名城、滨水生态城、红色旅游城、区域性金融中心—临沂市兰山区半程镇金锣工业园，与中国古典历史文化“二十四孝”中的“王祥卧冰求鲤”为邻。地理位置优越，交通十分便利，京沪、日东、青兰三条高速公路纵横交错，兖石、胶新铁路十字交叉。距岚山、日照、连云港三大港口约100公里，距青岛港约200公里；距临沂飞机场约30公里。总公司占地面积20000余平方米，现有高级技术人员13人，职工106人，固定资产3000余万，年产值约1.8亿元，年贸易额3000余万元，是一家研究开发生产及销售建筑模板覆膜纸为主的公司，下设覆膜纸厂、进出口贸易及广西柳州覆膜纸分厂。产品销往全国各地，并远销亚、非、欧等国家。
               </p>
             </div>
             <div class="intro-image">
-              <img src="https://picsum.photos/seed/company/600/400" alt="公司简介" />
+              <img :src="gongsi" alt="公司简介" />
             </div>
           </div>
         </div>
@@ -61,6 +60,7 @@
   </template>
   
   <script setup>
+  import gongsi from '@/assets/img/gongsi.jpg'
   import { useCompanyStore } from '@/stores/company'
   import { Flag, Trophy, UserFilled, Lightning } from '@element-plus/icons-vue'
 

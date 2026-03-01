@@ -82,9 +82,7 @@ const quickLinks = [
 
 // 产品链接（示例）
 const productLinks = [
-  { path: '/products?category=1', label: '镀铝覆膜纸' },
-  { path: '/products?category=2', label: '彩色覆膜纸' },
-  { path: '/products?category=3', label: '透明覆膜纸' }
+  { path: '/products?category=2', label: '彩色覆膜纸' }
 ]
 
 // 联系信息

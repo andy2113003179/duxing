@@ -5,7 +5,7 @@
         <!-- Logo -->
         <router-link to="/" class="logo">
           <img v-if="companyStore.companyLogo" :src="companyStore.companyLogo" :alt="companyStore.companyName">
-          <span v-else class="logo-text">{{ companyStore.companyName }}</span>
+          <span class="logo-text" style="margin-left: 10px;color: black;"> {{ companyStore.companyName }}</span>
         </router-link>
 
         <!-- 桌面端导航 -->
@@ -21,7 +21,7 @@
           </router-link>
           
           <!-- 语言切换 -->
-          <el-dropdown class="language-switcher" @command="handleLanguageChange">
+          <el-dropdown v-if="false" class="language-switcher" @command="handleLanguageChange">
             <span class="language-trigger">
               {{ i18nStore.currentLocale?.icon }} {{ i18nStore.currentLocale?.label }}
               <el-icon class="el-icon--right"><ArrowDown /></el-icon>

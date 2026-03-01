@@ -130,7 +130,7 @@ const getBannerImage = (banner) => {
     return `${import.meta.env.VITE_API_BASE_URL || ''}${banner.image}`
   }
   // 默认占位图
-  return 'https://via.placeholder.com/1920x600/1a5490/ffffff?text=Banner+Image'
+  return 'https://via.placeholder.com/1920x600/c0231e/ffffff?text=Banner+Image'
 }
 
 // 切换轮播图

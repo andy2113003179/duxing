@@ -45,8 +45,7 @@ export const uploadApi = {
   image: (file, type = 'other') => {
     const form = new FormData()
     form.append('file', file)
-    form.append('type', type)
-    return request.post('/v1/upload/image', form, {
+    return request.post(`/v1/upload/image?type=${type}`, form, {
       headers: { 'Content-Type': 'multipart/form-data' }
     })
   }

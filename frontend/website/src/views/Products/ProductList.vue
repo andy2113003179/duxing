@@ -11,7 +11,7 @@
       <div class="page-section">
         <div class="container">
           <!-- 筛选区域 -->
-          <div class="filter-section">
+          <!-- <div class="filter-section">
             <el-button-group>
               <el-button
                 :type="!currentCategory ? 'primary' : ''"
@@ -28,7 +28,7 @@
                 {{ cat.name }}
               </el-button>
             </el-button-group>
-          </div>
+          </div> -->
 
           <!-- 产品列表 -->
           <div v-if="!loading && products.length" class="products-grid">
@@ -92,7 +92,7 @@ const fetchProducts = async () => {
     const params = {
       page: pagination.value.page,
       pageSize: pagination.value.pageSize,
-      status: 'active'
+      status: 'published'
     }
 
     if (currentCategory.value) {

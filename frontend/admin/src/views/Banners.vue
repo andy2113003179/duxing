@@ -146,7 +146,7 @@ const fetchList = async () => {
   loading.value = true
   try {
     const res = await bannerApi.list({ page: page.value, limit: pageSize.value })
-    list.value = res.data?.banners || res.data?.rows || []
+    list.value = res.data
     total.value = res.data?.pagination?.total || 0
   } catch { /* 已处理 */ } finally {
     loading.value = false

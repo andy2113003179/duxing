@@ -83,11 +83,22 @@
 
           <div class="factory-images">
             <div
-              v-for="(image, index) in factoryImages"
-              :key="index"
               class="factory-image-item"
             >
-              <img :src="image.url" :alt="image.alt" />
+              <img :src="shengchan" :alt="生产车间" />
+              <div class="factory-image-item-title">生产车间</div>
+            </div>
+            <div
+              class="factory-image-item"
+            >
+              <img :src="cangku" :alt="质检区域" />
+              <div class="factory-image-item-title">质检区域</div>
+            </div>
+            <div
+              class="factory-image-item"
+            >
+              <img :src="wuliu" :alt="仓储物流" />
+              <div class="factory-image-item-title">仓储物流</div>
             </div>
           </div>
         </div>
@@ -114,6 +125,9 @@
 </template>
 
 <script setup>
+import shengchan from '@/assets/img/shengchan.jpg'
+import cangku from '@/assets/img/cangku.png'
+import wuliu from '@/assets/img/wuliu.png'
 import { ref, onMounted } from 'vue'
 import Banner from '@/components/Common/Banner.vue'
 import ProductCard from '@/components/Common/ProductCard.vue'
@@ -156,16 +170,16 @@ const productsLoading = ref(true)
 
 // 工厂数据
 const factoryStats = [
-  { value: '2010', label: '成立于' },
-  { value: '10000+', label: '生产面积(㎡)' },
-  { value: '50+', label: '专业团队' },
+  { value: '2005', label: '成立于' },
+  { value: '20000+', label: '生产面积(㎡)' },
+  { value: '120+', label: '专业团队' },
   { value: '1000+', label: '合作客户' }
 ]
 
 const factoryImages = [
-  { url: 'https://via.placeholder.com/600x400/555555/ffffff?text=Production+Workshop', alt: '生产车间' },
-  { url: 'https://via.placeholder.com/600x400/666666/ffffff?text=Quality+Control', alt: '质检区域' },
-  { url: 'https://via.placeholder.com/600x400/777777/ffffff?text=Warehouse+Logistics', alt: '仓储物流' }
+  { url: '@/assets/img/shengchan.jpg', alt: '生产车间' },
+  { url: '@/assets/img/cangku.png', alt: '质检区域' },
+  { url: '@/assets/img/wuliu.png', alt: '仓储物流' }
 ]
 
 // 获取推荐产品
@@ -174,7 +188,7 @@ const fetchFeaturedProducts = async () => {
   try {
     const res = await getProductList({
       is_featured: true,
-      status: 'active',
+      status: 'published',
       page: 1,
       pageSize: 6
     })
@@ -331,6 +345,15 @@ onMounted(() => {
           transform: scale(1.1);
         }
       }
+    }
+
+    .factory-image-item-title {
+      font-size: $font-size-xl;
+      font-weight: $font-weight-semibold;
+      position: absolute;
+      text-align: center;
+      margin-top: $spacing-lg;
+      color: $text-primary;
     }
   }
 }

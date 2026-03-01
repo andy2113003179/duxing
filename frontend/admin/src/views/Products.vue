@@ -209,7 +209,7 @@ const fetchList = async () => {
     const params = { page: page.value, limit: pageSize.value }
     if (searchName.value) params.keyword = searchName.value
     const res = await productApi.list(params)
-    list.value = res.data?.products || res.data?.rows || []
+    list.value = res.data?.items || []
     total.value = res.data?.pagination?.total || 0
   } catch { /* 已处理 */ } finally {
     loading.value = false

@@ -16,8 +16,8 @@ export function generatePlaceholder(
   width = 800,
   height = 600,
   text = '',
-  color1 = '#1a5490',
-  color2 = '#0d2d4d'
+  color1 = '#c0231e',
+  color2 = '#6b0f0c'
 ) {
   const svg = `
     <svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
@@ -51,24 +51,24 @@ export function generatePlaceholder(
  */
 export const placeholders = {
   // 轮播图
-  banner1: generatePlaceholder(1920, 600, '都兴工贸 - 专业覆膜纸生产', '#1a5490', '#0d2d4d'),
-  banner2: generatePlaceholder(1920, 600, '品质保证 · 技术领先', '#2563eb', '#1e40af'),
-  banner3: generatePlaceholder(1920, 600, '服务至上 · 合作共赢', '#0891b2', '#0e7490'),
+  banner1: generatePlaceholder(1920, 600, '都兴工贸 - 专业覆膜纸生产', '#c0231e', '#6b0f0c'),
+  banner2: generatePlaceholder(1920, 600, '品质保证 · 技术领先', '#d93a35', '#8f1510'),
+  banner3: generatePlaceholder(1920, 600, '服务至上 · 合作共赢', '#b5200b', '#7a1208'),
   
   // 产品图
   product1: generatePlaceholder(400, 300, '镀铝覆膜纸', '#64748b', '#475569'),
-  product2: generatePlaceholder(400, 300, '彩色覆膜纸', '#7c3aed', '#6d28d9'),
-  product3: generatePlaceholder(400, 300, '透明覆膜纸', '#0891b2', '#0e7490'),
-  product4: generatePlaceholder(400, 300, '珠光覆膜纸', '#db2777', '#be185d'),
-  product5: generatePlaceholder(400, 300, '哑光覆膜纸', '#059669', '#047857'),
-  product6: generatePlaceholder(400, 300, '激光覆膜纸', '#dc2626', '#b91c1c'),
+  product2: generatePlaceholder(400, 300, '彩色覆膜纸', '#c0231e', '#6b0f0c'),
+  product3: generatePlaceholder(400, 300, '透明覆膜纸', '#d93a35', '#8f1510'),
+  product4: generatePlaceholder(400, 300, '珠光覆膜纸', '#e8890c', '#b56a09'),
+  product5: generatePlaceholder(400, 300, '哑光覆膜纸', '#8f1510', '#5c0b0b'),
+  product6: generatePlaceholder(400, 300, '激光覆膜纸', '#b5200b', '#7a1208'),
   
   // 公司图片
-  company: generatePlaceholder(600, 400, '都兴工贸有限公司', '#1a5490', '#0d2d4d'),
-  factory: generatePlaceholder(600, 400, '现代化生产基地', '#2563eb', '#1e40af'),
+  company: generatePlaceholder(600, 400, '都兴工贸有限公司', '#c0231e', '#6b0f0c'),
+  factory: generatePlaceholder(600, 400, '现代化生产基地', '#d93a35', '#8f1510'),
   
   // 产品详情大图
-  productDetail: generatePlaceholder(800, 600, '产品详情', '#1a5490', '#0d2d4d'),
+  productDetail: generatePlaceholder(800, 600, '产品详情', '#c0231e', '#6b0f0c'),
   
   // 默认占位图
   default: generatePlaceholder(400, 300, '图片', '#94a3b8', '#64748b')

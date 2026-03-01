@@ -58,10 +58,10 @@
           </div>
 
           <!-- 产品内容 -->
-          <div v-if="product.content" class="product-content">
+          <!-- <div v-if="product.content" class="product-content">
             <h2>产品详情</h2>
             <div class="content-text" v-html="product.content"></div>
-          </div>
+          </div> -->
         </div>
       </div>
 
