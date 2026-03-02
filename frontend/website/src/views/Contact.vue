@@ -36,12 +36,12 @@ const contacts = [
   {
     icon: Phone,
     title: '联系电话',
-    content: '15192958777'
+    content: '0539-2919777'
   },
   {
     icon: Message,
     title: '电子邮箱',
-    content: 'info@duxing.com'
+    content: '1793775728@qq.com'
   },
   {
     icon: Location,
@@ -51,7 +51,7 @@ const contacts = [
   {
     icon: Clock,
     title: '工作时间',
-    content: '周一至周六 8:00-18:00'
+    content: '周一至周日 8:00-5:30'
   }
 ]
 </script>

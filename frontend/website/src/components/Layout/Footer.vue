@@ -55,6 +55,7 @@
     <div class="footer-bottom">
       <div class="container">
         <div class="copyright">
+          鲁ICP备18057312号·鲁ICP备18057312号-1
           <p>&copy; {{ currentYear }} {{ companyStore.companyName }}. All rights reserved.</p>
         </div>
       </div>
@@ -87,8 +88,8 @@ const productLinks = [
 
 // 联系信息
 const contactInfo = ref({
-  phone: '15192958777',
-  email: 'info@duxing.com',
+  phone: '0539-2919777',
+  email: '1793775728@qq.com',
   address: '山东省临沂市兰山区半程镇工业园任家村南'
 })
 </script>
