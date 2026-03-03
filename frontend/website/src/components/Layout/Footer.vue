@@ -88,7 +88,7 @@ const productLinks = [
 
 // 联系信息
 const contactInfo = ref({
-  phone: '0539-2919777',
+  phone: '15192958577',
   email: '1793775728@qq.com',
   address: '山东省临沂市兰山区半程镇工业园任家村南'
 })

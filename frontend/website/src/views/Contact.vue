@@ -36,7 +36,7 @@ const contacts = [
   {
     icon: Phone,
     title: '联系电话',
-    content: '0539-2919777'
+    content: '15192958577'
   },
   {
     icon: Message,
